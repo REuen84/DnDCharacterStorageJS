@@ -9,22 +9,17 @@
 </head>
 <body>
     <div class="topnav">
-        <button class="active" id="home">Home</button>
+        <button id="home">Home</button>
         <button id="classLookup">Class Lookup</button>
-        <button id="characterSearch">Character Search</button>
+        <button class="active" id="characterSearch">Character Search</button>
         <button id="characterManagement">Character Management</button>
       </div>
-    <h1>DnD Character Storage</h1>
-    <p>Characters displayed here:</p>
+    <h1>Character Search</h1>
+    Please enter a Username to view their characters
+    <br> <br>
+    <input id="userInput" type="text">
+    <button id="submitButton">Search</button>
     <span id="content"></span>
-    <button id="loadButton">load actors</button>
-    <br>
-    <br>
-    <input id="nameInput" type="text">
-    <input id="classInput" type="text">
-    <br>
-    <br>
-    <button id="submitButton">submit actor</button>
-    <script src="CharacterStorage.js"></script>
+    <script src="CharacterSearch.js"></script>
 </body>
 </html>

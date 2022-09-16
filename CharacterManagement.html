@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CharacterManagement.css">
+</head>
+<body>
+    <div class="topnav">
+        <button id="home">Home</button>
+        <button id="classLookup">Class Lookup</button>
+        <button id="characterSearch">Character Search</button>
+        <button class="active" id="characterManagement">Character Management</button>
+      </div>
+
+    <span id="content"></span> <br> <br>
+    Have a new character to add? Click here! <br> <br>
+    <button id="addButton">Add Character</button>
+    <div class="addCharacter" id="addCharacter">
+    Character name:
+    <input id="nameInput" type="text"> <br> <br>
+    Character class:
+    <input id="classInput" type="text"> <br> <br>
+    Character level:
+    <input id="levelInput" type="number" min="1" max="20" step="1"> <br> <br>
+    <button id="submitButton">Submit Character</button>
+</div>
+    <script src="CharacterManagement.js"></script>
+</body>
+</html>

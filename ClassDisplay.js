@@ -3,9 +3,14 @@ let url = window.location.href;
 let currentUser = url.split("=")[1];
 let classInput = document.getElementsByName('className');
 let submitButton = document.getElementById("submitButton");
-let homeInput = document.getElementById("home");
+let homeButton = document.getElementById("home");
+let lookupButton = document.getElementById("classLookup");
+let searchButton = document.getElementById("characterSearch");
+let manageButton = document.getElementById("characterManagement");
 submitButton.addEventListener("click", apiGetDescription);
-homeInput.addEventListener("click", home);
+homeButton.addEventListener("click", goHome);
+searchButton.addEventListener("click", characterSearch);
+manageButton.addEventListener("click", characterManagement);
 
 
 async function apiGetDescription(){
@@ -27,6 +32,14 @@ async function apiGetDescription(){
     content.appendChild(descCard);
 }
 
-async function home(){
+async function goHome(){
     location.href="file:///C:/Users/Ri/Documents/Revature/PR1/CharacterStorage.html#user="+currentUser;
+}
+
+async function characterSearch(){
+    location.href="file:///C:/Users/Ri/Documents/Revature/PR1/CharacterSearch.html#user="+currentUser;
+}
+
+async function characterManagement(){
+    location.href="file:///C:/Users/Ri/Documents/Revature/PR1/CharacterManagement.html#user="+currentUser;
 }
