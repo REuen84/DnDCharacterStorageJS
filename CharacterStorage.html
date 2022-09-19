@@ -14,17 +14,34 @@
         <button id="characterSearch">Character Search</button>
         <button id="characterManagement">Character Management</button>
       </div>
-    <h1>DnD Character Storage</h1>
-    <p>Characters displayed here:</p>
+    <h1>Welcome to your main page!</h1>
+    <p>Here you can navigate to other places to view characters and classes, or manage your own characters. Just use the navigation bar at the top to get started!</p> <br> <br> <br>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="https://i.imgur.com/rsVK6rH.png" style="width:100%" style="vertical-align:middle">
+        <div class="text">Oronte Lorylei, level 20 Paladin</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="https://i.imgur.com/9ed5qiO.png" style="width:100%">
+        <div class="text">Foice Hondori, level 5 Monk</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="https://i.imgur.com/UoHuT3o.png" style="width:100%">
+        <div class="text">Falri Lumian, level 6 Warlock</div>
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </body>
     <span id="content"></span>
-    <button id="loadButton">load actors</button>
     <br>
     <br>
-    <input id="nameInput" type="text">
-    <input id="classInput" type="text">
-    <br>
-    <br>
-    <button id="submitButton">submit actor</button>
     <script src="CharacterStorage.js"></script>
 </body>
 </html>

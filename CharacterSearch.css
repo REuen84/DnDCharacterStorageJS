@@ -41,39 +41,41 @@
     background-color: #04AA6D;
     color: white;
   }
+
   body {
-    background: url(https://cdn1.epicgames.com/ue/product/Screenshot/HighresScreenshot00000-1920x1080-2032d774aaed732f2993c4c7abf274e0.jpg) no-repeat center center fixed; 
+    background: url(https://i.pinimg.com/originals/7a/c5/50/7ac55086ebd44367aec082e86fec3052.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-color: white;
-text-align: center;
-
-  }
-
-  h1{
-    font-size: 60px;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  a {
-    font-size: 20px;
     color: white;
-  }
+    text-align: center;
+      }
 
-  li {
-    display: block;
-    margin: auto;
-  }
+      h1 {
+        font-size: 60px;
+        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+      }
 
-  button {
-    font-size: 20px;
-  }
+      p {
+        font-size: 20px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      }
 
-  input {
-    font-size: 20px;
-  }
+      button {
+        font-size: 20px;
+      }
+
+      input {
+        font-size: 20px;
+      }
+
+      li {
+        display: block;
+        margin: auto;
+      }
+
+      img {
+        height: 25%;
+        width: 25%;
+      }

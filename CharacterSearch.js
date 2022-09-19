@@ -14,7 +14,7 @@ manageButton.addEventListener("click", characterManagement);
 
 async function apiGetActors(){
     username = userInput.value;
-    let response = await fetch("http://localhost:9000/view/" + username);
+    let response = await fetch("http://20.169.50.220:9000/view/" + username);
     response = await response.json();
     loadActors(response);
 }
@@ -26,12 +26,12 @@ async function loadActors(response){
 
     for(let i = 0; i < response.length; i++){
         let actorCard = document.createElement("li");
-        let actorName = document.createElement("a");
-        actorName.innerText = response[i].name;
-        let actorClass = document.createElement("p");
-        actorClass.innerText = response[i].cla;
+        let actorName = document.createElement("p");
+        actorName.innerText = response[i].name+", level "+response[i].level+" "+response[i].cla;
+        let image = document.createElement("img");
+        image.src = response[i].url;
         actorCard.appendChild(actorName);
-        actorCard.appendChild(actorClass);
+        actorCard.appendChild(image);
         actorList.appendChild(actorCard);
     }
     content.appendChild(actorList);

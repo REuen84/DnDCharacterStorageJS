@@ -1,0 +1,31 @@
+html { 
+    background: url(https://i0.wp.com/www.hipstersanddragons.com/wp-content/uploads/2022/03/dice-for-dungeons-and-dragons.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+    h1 {
+    text-align: center;
+    color: white;
+    font-family: Copperplate, Fantasy;
+    font-size: 60px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.Loginstuff {
+    border-radius: 45px;
+    background-color: rgba(192, 192, 192, 0.5);
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+}

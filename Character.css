@@ -1,0 +1,39 @@
+body {
+    background: url(https://cdn1.epicgames.com/ue/product/Screenshot/HighresScreenshot00000-1920x1080-2032d774aaed732f2993c4c7abf274e0.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+color: white;
+text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    text-align: center;
+}
+
+input {
+    font-size: 20px;
+}
+
+content2 {
+    font-size: 20px;
+}

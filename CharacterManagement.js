@@ -21,13 +21,13 @@ addButton.addEventListener("click", addVisible);
 submitButton.addEventListener("click", apiGetUserID);
 
 async function apiGetActors(){
-    let response = await fetch("http://localhost:9000/view/" + currentUser);
+    let response = await fetch("http://20.169.50.220:9000/view/" + currentUser);
     response = await response.json();
     loadActors(response);
 }
 
 async function apiGetActorsNoLoad(){
-    let response = await fetch("http://localhost:9000/view/" + currentUser);
+    let response = await fetch("http://20.169.50.220:9000/view/" + currentUser);
     response = await response.json();
     console.log(userID);
     apiAddActor(response);
@@ -40,13 +40,13 @@ async function loadActors(response){
     for(let i = 0; i < response.length; i++){
         let actorCard = document.createElement("li");
         let actorName = document.createElement("a");
+        let actorSpace = document.createElement("p");
+        actorSpace.innerHTML = "";
         actorName.href = "file:///C:/Users/Ri/Documents/Revature/PR1/Character.html#chaID="+response[i].actorID;
         actorName.innerText = response[i].name;
-        let actorClass = document.createElement("p");
-        actorClass.innerText = response[i].cla;
         actorCard.appendChild(actorName);
-        actorCard.appendChild(actorClass);
         actorList.appendChild(actorCard);
+        actorList.appendChild(actorSpace);
     }
     content.appendChild(actorList);
 }
@@ -58,7 +58,7 @@ async function addVisible(){
 
 async function apiGetUserID(){
     console.log(currentUser);
-    let u = await fetch("http://localhost:9000/userID/"+currentUser);
+    let u = await fetch("http://20.169.50.220:9000/userID/"+currentUser);
     u = await u.json();
     userID = u.userID;
     apiGetActorsNoLoad();
@@ -82,7 +82,7 @@ async function apiAddActor(response){
             level:level,
             userID:userID
         }
-        let response = await fetch("http://localhost:9000/actors", {
+        let response = await fetch("http://20.169.50.220:9000/actors", {
             method:'POST',
             mode:'cors',
             headers: {

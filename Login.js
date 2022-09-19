@@ -4,7 +4,7 @@ let passwordInput = document.getElementById("password");
 let submitButton = document.getElementById("submitButton");
 submitButton.addEventListener("click", apiCheckAccountInfo);
 
-async function apiCheckLoginInfo(){
+/* async function apiCheckLoginInfo(){
     let inputCredentials = {
         username:usernameInput.value,
         password:passwordInput.value
@@ -19,15 +19,15 @@ let response = await fetch("http://localhost:9000/user/", {
         body:JSON.stringify(inputCredentials)
 });
 return response.json();
-//console.log(response);
-//let result = await response.text();
-//console.log(result);
-}
+console.log(response);
+let result = await response.text();
+console.log(result);
+} */
 
 async function apiCheckAccountInfo(){
     let username = usernameInput.value;
     let password = passwordInput.value;
-    let response = await fetch("http://localhost:9000/users/" + username + "/" +password);
+    let response = await fetch("http://20.169.50.220:9000/users/" + username + "/" +password);
     response = await response.json();
     console.log(response);
     if(response.created){

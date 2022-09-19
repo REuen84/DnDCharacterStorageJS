@@ -1,0 +1,91 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav button {
+    float: left;
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav button:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav button.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  body {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2b111d18-a9e5-4dfc-8be3-bb520c8889af/deh9sow-c1ca688b-f1d3-4eb1-8f57-9fdd64ab7576.jpg/v1/fill/w_1280,h_720,q_75,strp/falls__fantasy_forest_symmetry_concept_art__by_acidifyart_deh9sow-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMmIxMTFkMTgtYTllNS00ZGZjLThiZTMtYmI1MjBjODg4OWFmXC9kZWg5c293LWMxY2E2ODhiLWYxZDMtNGViMS04ZjU3LTlmZGQ2NGFiNzU3Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.sIAMhtHA7OO_nW01EU5mJhFA_M5VKxKVnjuWbmoiM7k) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+      }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 5px 5px 10px #000000;
+      }
+    
+.classButtons {
+    background-color: #333;
+    overflow: hidden;
+    opacity: 0.8;
+    border-radius: 10px;
+    float: left;
+    height: 680px;
+    width: 170px;
+    font-size: 17px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  .centerText {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 780px;
+    width: 20%;
+    background-color: #333;
+    overflow: hidden;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+

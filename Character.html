@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Character.css">
 </head>
 <body>
     <div class="topnav">
       </div>
-      <h1>Character Entry</h1>
-      <p id="name"></p>
+      <h1 id="name"></h1>
       <span id="content"></span> <br> <br>
       <button id="update">Update Character Level</button>
       <div class="updateCha" id="updateCha">
-        What is your character's new level?
+        <p>What is your character's new level?</p>
         <input id="newLevel" type="number" min="1" max="20" step="1">
         <button id="update2">Update Character Level</button>
       </div> 
       <br> <br>
+      <button id="update3">Update Character Art</button>
+      <div class="updateArt" id="updateArt">
+        <p>Input the URL of your character's new art:</p>
+        <input id="newArt" type="text">
+        <button id="update4">Update Character Art</button>
+        </div>
+        <br> <br>
       <button id="delete">Delete Character</button>
       <div class="deleteCha" id="deleteCha">
-        Are you sure you want to permanently delete this character? <br> <br>
+        <p>Are you sure you want to permanently delete this character?</p> <br> <br>
         <button id="confirm">Yes</button>
         <button id="deny">No</button>
         </div>
